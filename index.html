@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn German Easy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Learn German Easy</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#lessons">Lessons</a></li>
+                <li><a href="#vocabulary">Vocabulary</a></li>
+                <li><a href="#culture">Culture</a></li>
+                <li><a href="#progress">Progress</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Learn German the Easy Way</h1>
+        <p>Start your journey to fluency with beginner-friendly lessons and interactive tools.</p>
+        <a href="#lessons" class="cta-button">Start Learning Now</a>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons" class="section">
+        <h2>Our Lessons</h2>
+        <div class="lesson-grid">
+            <div class="lesson-card">
+                <h3>Lesson 1: Greetings</h3>
+                <p>Learn how to say hello, goodbye, and introduce yourself.</p>
+                <button onclick="playAudio('hello.mp3')">Listen: Hallo</button>
+                <a href="#" class="lesson-link">Start Lesson</a>
+            </div>
+            <div class="lesson-card">
+                <h3>Lesson 2: Numbers</h3>
+                <p>Master counting from 1 to 100 in German.</p>
+                <button onclick="playAudio('one.mp3')">Listen: Eins</button>
+                <a href="#" class="lesson-link">Start Lesson</a>
+            </div>
+            <!-- Add more lessons as needed -->
+        </div>
+    </section>
+
+    <!-- Vocabulary Section -->
+    <section id="vocabulary" class="section">
+        <h2>Vocabulary Trainer</h2>
+        <div class="flashcard">
+            <div id="flashcard-word">Hallo.(HAH-loh)</div>
+            <div id="flashcard-translation">Hello</div>
+            <button onclick="nextFlashcard()">Next Word</button>
+        </div>
+        <p>Test your knowledge with our interactive quizzes!</p>
+        <a href="#" class="cta-button">Try a Quiz</a>
+    </section>
+
+    <!-- Culture Section -->
+    <section id="culture" class="section">
+        <h2>Discover German Culture</h2>
+        <div class="culture-grid">
+            <div class="culture-card">
+                <img src="oktoberfest.jpg" alt="Oktoberfest">
+                <h3>Oktoberfest</h3>
+                <p>Learn about Germany’s famous beer festival.</p>
+                <a href="https://rb.gy/jjzk0q">Read More</a>
+            </div>
+            <div class="culture-card">
+                <img src="berlin.jpg" alt="Berlin">
+                <h3>Berlin’s History</h3>
+                <p>Explore the vibrant history of Germany’s capital.</p>
+                <a href="https://en.wikipedia.org/wiki/History_of_Berlin">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Section -->
+    <section id="progress" class="section">
+        <h2>Your Progress</h2>
+        <div id="progress-tracker">
+            <p>Lessons Completed: <span id="lessons-completed">0</span></p>
+            <p>Quiz Score: <span id="quiz-score">0%</span></p>
+            <button onclick="resetProgress()">Reset Progress</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Learn German Easy. All rights reserved.</p>
+        <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Follow Us</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
